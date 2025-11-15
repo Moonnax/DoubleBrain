@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoubleBrain</title>
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/icon-button.css" />
+  </head>
+  <body>
+    <header class="header">
+            <div>
+        <button id="menu-lateral">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+      <div>
+        <img src="/assets/img/logo-nome.png" alt="DoubleBrain🧠">
+      </div>
+      <div class="sinapse-counting">
+        <img src="/assets/img/logo.png" alt="🧠">
+      </div>
+    </header>
+<main>
+
+
+      <!-- menu fixo inferior -->
+    <nav id="navigation">
+      <ul class="menu">
+        <li class="menu-item">
+          <a class="menu-link" href="index.html">
+            <i data-lucide="home" class="icon-menu"></i>
+            <span>Início</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="praticar.html">
+            <i data-lucide="zap" class="icon-menu"></i>
+            <span>Praticar</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="trilhas.html">
+            <i data-lucide="book" class="icon-menu"></i>
+            <span>Trilhas</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+   
+
+    <!-- ALTERAR ABAIXO PARA O MENU LATERAL -->
+    <section class="address-dialog">
+      <header class="dialog-header">
+        <h2 class="dialog-title">Alterar endereço de entrega</h2>
+        <button id="close-button" class="icon-button" aria-label="Fechar">
+          <i data-lucide="x"></i>
+        </button>
+      </header>
+      <form>
+        <div class="form-input">
+          <label class="sr-only" for="cep">Cep</label>
+          <input class="text-field" type="text" id="cep" name="cep" placeholder="Digite o CEP" value="09060-050">
+        </div>
+        <div class="form-input">
+          <label class="sr-only" for="street">Rua</label>
+          <input class="text-field" type="text" id="street" name="street" required disabled value="Rua Xingu">
+        </div>
+        <div class="form-grid">
+          <div class="form-input input-small">
+            <label class="sr-only" for="number">Número</label>
+            <input class="text-field" type="text" id="number" name="number" required disabled value="12354">
+          </div>
+          <div class="form-input">
+            <label class="sr-only" for="additional">Complemento</label>
+            <input class="text-field" type="text" id="additional" name="additional" required disabled value="Apto 101">
+          </div>
+        </div>
+        <div class="form-input">
+          <label class="sr-only" for="neighborhood">Bairro</label>
+          <input class="text-field" type="text" id="neighborhood" name="neighborhood" required disabled value="Vila Xingu">
+        </div>
+        <div class="form-grid">
+          <div class="form-input">
+            <label class="sr-only" for="city">Cidade</label>
+            <input class="text-field" type="text" id="city" name="city" required disabled value="São Paulo">
+          </div>
+          <div class="form-input input-small">
+            <label class="sr-only" for="state">Estado</label>
+            <input class="text-field" type="text" id="state" name="state" required disabled value="SP">
+          </div>
+        </div>
+        <button class="button primary full">Cadastrar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- para dsktop -->
+  <footer>
+
+  </footer>
+
+
+      <script src="./js/script.js"></script>
+    <script src="./js/dialog.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

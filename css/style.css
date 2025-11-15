@@ -19,12 +19,15 @@ body {
   font-weight: 400;
   font-style: normal;
   padding-top: 70px;
+  
 }
 
 main {
   overflow-y: auto;
   padding-bottom: 70px;
   height: 100vh;
+    padding-left: 22px;
+
 }
 img {
   max-width: 100%;
@@ -100,7 +103,6 @@ img {
   background-color: #F6D6FF;
   border-radius: 20px;
   justify-content: center;
-  
   & p {
 
   }
@@ -135,7 +137,7 @@ img {
   display: flex;
 }
 .section-title {
-  font-size: 30px; ;
+  font-size: 26px; ;
 }
 
 .visual-percent-background {
@@ -227,7 +229,6 @@ border-radius: 20px;
   border-radius: 20px;
 
 }
-
 
 
 
