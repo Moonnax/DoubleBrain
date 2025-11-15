@@ -31,9 +31,6 @@ img {
   margin: 0 0 2.5rem 0;
 }
 
-
-
-
 #menu-lateral{
   border: 0;
   font-weight: 700;
@@ -87,6 +84,7 @@ img {
   }
 }
 
+/* SAUDAÇÕES */
 .greeting-user {
   height:62px ;
   width: 335px;
@@ -102,6 +100,41 @@ img {
     height: 70px; ;
     border-bottom: 1px solid var(--interface-border);
   }
+
+  /* SCORE */
+
+.score {
+}
+
+.evolution{
+  display: flex;
+}
+.section-title {
+  font-size: 32px; ;
+}
+
+.visual-percent-background {
+width: 276px;
+height: 28px;
+background-color: var(--brand-primary-light);
+border-radius: 20px;
+}
+
+
+.zero {
+}
+
+#contagem{
+
+}
+
+
+
+
+
+
+
+
 
 /* TABLET (mínimo 768px) */
 @media (min-width: 768px) {
