@@ -1,0 +1,63 @@
+
+/* MOBILE (até 480px) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.25;
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--interface-light);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.offers {
+  margin: 0 0 2.5rem 0;
+}
+
+
+
+#change-address {
+  border: 0;
+  font-weight: 700;
+  background: none;
+  color: var(--brand-primary);
+  cursor: pointer;
+  transform: scale(0.7);
+}
+
+
+
+
+
+
+
+/* TABLET (mínimo 768px) */
+@media (min-width: 768px) {
+}
+
+/* DESKTOP (mínimo 992px) */
+@media (min-width: 992px) {
+}
+
+/* DESKTOP GRANDE (mínimo 1300px) */
+@media (min-width: 1300px) {
+}

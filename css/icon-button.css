@@ -1,0 +1,15 @@
+.icon-button {
+  border: 0;
+  background-color: transparent;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--interface-dark);
+  cursor: pointer;
+  transform: scale(0.8);
+  transition: background-color 0.2s ease-in;
+
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--interface-border), white 10%);
+  }
+}

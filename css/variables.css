@@ -1,0 +1,10 @@
+:root {
+  /* Colors */
+  --brand-primary: hsla(18, 85%, 50%, 1);
+  --brand-primary-light: hsla(18, 85%, 50%, 0.1);
+
+  --interface-darkest: hsla(17, 17%, 8%, 1);
+  --interface-dark: hsla(220, 9%, 46%, 1);
+  --interface-base: hsla(216, 12%, 84%, 1);
+  --interface-light: hsla(0, 13%, 97%, 1);
+}
