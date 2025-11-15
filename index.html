@@ -12,19 +12,50 @@
   </head>
   <body>
     <header class="header">
+      <div class="sinapse-counting">
+        <img src="/assets/img/logo.png" alt="🧠">
+      </div>
       <div>
-        <button id="change-address">
+        <img src="/assets/img/logo-nome.png" alt="DoubleBrain🧠">
+      </div>
+      <div>
+        <button id="menu-lateral">
           <i data-lucide="menu"></i>
         </button>
       </div>
+
+    </header>
+    <main>
       <div class="greeting-user">
         <p>Olá, <span id="userName"></span></p>
-        <a href="">Ver meus pontos</a>
-        <span class="chip to-right"><span id="userPoints"></span> pontos</span>
+        <span>Pronto para os 5 minutos de hoje?</span>
       </div>
-    </header>
-    
+
+    <!-- menu fixo inferior -->
+    <nav id="navigation">
+      <ul class="menu">
+        <li class="menu-item">
+          <a class="menu-link active" href="index.html">
+            <i data-lucide="home" class="icon-menu"></i>
+            <span>Início</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="praticar.html">
+            <i data-lucide="zap" class="icon-menu"></i>
+            <span>Praticar</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="trilhas.html">
+            <i data-lucide="book" class="icon-menu"></i>
+            <span>Trilhas</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
    
+    <!-- ALTERAR ABAIXO PARA O MENU LATERAL -->
     <section class="address-dialog">
       <header class="dialog-header">
         <h2 class="dialog-title">Alterar endereço de entrega</h2>
@@ -68,7 +99,16 @@
         <button class="button primary full">Cadastrar</button>
       </form>
     </section>
-    <script src="./js/script.js"></script>
+
+  </main>
+
+  
+  <footer>
+
+  </footer>
+
+
+      <script src="./js/script.js"></script>
     <script src="./js/dialog.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     
