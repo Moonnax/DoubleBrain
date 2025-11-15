@@ -18,8 +18,14 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  padding-top: 70px;
 }
 
+main {
+  overflow-y: auto;
+  padding-bottom: 70px;
+  height: 100vh;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -87,19 +93,37 @@ img {
 
 /* SAUDAÇÕES */
 .greeting-user {
+  display: flex;
+  flex-direction: column;
   height:62px ;
   width: 335px;
-  background-color: var(--brand-primary-light) ;
+  background-color: #F6D6FF;
+  border-radius: 20px;
+  justify-content: center;
+  
+  & p {
+
+  }
   
 }
 
  .header {
-    display: flex;
-    flex-direction: reverse;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px; ;
-    border-bottom: 1px solid var(--interface-border);
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--interface-border);
+
+  /* position e top fixa o header no topo independente da rolagem */
+  position: fixed;
+  top: 0; 
+  height: 70px; 
+  width: 100%; 
+  z-index: 20;  /* isso aq faz o header descer em cima do conteudoe nao o conteudo passar por cima dele */
+  background-color: white;
+
+
   }
 
   /* SCORE */
@@ -111,7 +135,7 @@ img {
   display: flex;
 }
 .section-title {
-  font-size: 32px; ;
+  font-size: 30px; ;
 }
 
 .visual-percent-background {
@@ -121,12 +145,11 @@ background-color: var(--brand-primary-light);
 border-radius: 20px;
 }
 
-
-.zero {
-}
-
-#contagem{
-
+.visual-percent-background {
+width: 276px;
+height: 28px;
+background-color: var(--brand-primary-light);
+border-radius: 20px;
 }
 
 .focus-day {
@@ -174,7 +197,6 @@ border-radius: 20px;
   gap:22px ;
 }
 
-
 .quiz-description-visual{
   display: flex;
   text-align: left;
@@ -198,7 +220,13 @@ border-radius: 20px;
   }
 }
 
+.progress-visual {
+  background-color: #F3F3F5 ;
+  width: 330px;
+  height: 245px;
+  border-radius: 20px;
 
+}
 
 
 
