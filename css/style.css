@@ -191,6 +191,7 @@ padding-left: 10px; ;
   width: auto;
   margin: 0 auto;
   justify-content: space-between;
+  padding-bottom: 8px;
 }
 .section-title {
   font-size: 26px;
@@ -199,10 +200,10 @@ padding-left: 10px; ;
 
 #assunt-title{
 font-size: 26px;
-padding-bottom: 15px;
+padding: 15px 0;
 margin: auto 0;
 text-align: center;
-color: var(--brand-primary);
+color: var(--interface-green);
 }
 .visual-percent-background {
 width: 250px;
@@ -258,6 +259,8 @@ border-radius: 20px;
 
 .cards-menu{
     margin: 0 auto;
+    margin-bottom: 20px;
+
 
 }
 .cards-menu-visual {
@@ -270,13 +273,22 @@ border-radius: 20px;
   background-color: var(--interface-green); 
   color: white;
   border-radius: 20px;
-    margin: 0 auto;
-
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  padding-bottom: 20px;
 }
+
 
 
 .lateral-align {
   display: flex;
+}
+
+.quiz-menu{
+  margin-bottom: 20px;
+
 }
 
 .quiz-description-visual{
@@ -300,7 +312,8 @@ border-radius: 20px;
   }
 
   & img{
-  margin-top: 60px
+  height: auto;
+  width: 80px;
   }
 }
 
@@ -310,6 +323,11 @@ border-radius: 20px;
   height: 245px;
   border-radius: 20px;
   margin: 0 auto;
+
+}
+
+.progress-menu{
+  margin-bottom: 20px;
 
 }
 
@@ -346,7 +364,23 @@ border-radius: 20px;
         padding: 0.3125rem;
     }
 
+#contactCTA{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
 
+#contactus{
+  font-size: 14px;
+  margin: 10px 5px;
+  color: var(--interface-border);
+
+  & p{
+    padding: 3px;
+    text-align: center;
+  }
+}
 /* TABLET (mínimo 768px) */
 @media (min-width: 768px) {
 }
