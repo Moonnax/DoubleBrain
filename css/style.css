@@ -23,9 +23,6 @@ body {
 }
 
 main {
-  overflow-y: auto;
-  padding-bottom: 70px;
-  height: 100vh;
   padding: 10px 10px ;
   padding-bottom: 80px;
 
@@ -362,6 +359,8 @@ border-radius: 20px;
 
     .mobile-click-link {
         padding: 0.3125rem;
+        text-decoration: none;
+        color: var(--brand-primary);
     }
 
 #contactCTA{
