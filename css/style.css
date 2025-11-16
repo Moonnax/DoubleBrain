@@ -524,35 +524,33 @@ text-align: center;
 
 
 
-/* FLASHCARDS PAGINA */
+/* FLASHCARDS PAGINA  e CARROSSEL ROLAGEM*/
 
 #card-align {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory; 
+  padding: 0 40px; 
+  gap: 20px; 
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; 
+  justify-content: unset; 
+  align-items: unset;
   margin-bottom: 25px;
-  
 }
+
 .card {
+  flex: 0 0 280px; 
+  scroll-snap-align: center; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-
-  width: 280px;
   height: 400px;
   background-color: var(--interface-green);
   border-radius: 20px;
-  & span {
-    padding: 15px;
-    margin-top: auto;
-  }
-  & a {
-    text-decoration: none;
-    color: black;
-  }
 }
 
 .card-content {
@@ -560,22 +558,31 @@ text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 1; 
   width: 100%;
 }
+
+.card span {
+  padding: 15px;
+  margin-top: auto; 
+}
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
 .pergunta-card {
   font-size: 24px;
 }
 .resposta-card {
   display: none;
-font-size: 18px;
+  font-size: 18px;
 }
 
 .central{
   margin: 25px 0;
   font-size: 22px;
   text-align: center;
-    
 }
 
 
