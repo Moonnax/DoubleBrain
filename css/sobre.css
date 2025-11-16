@@ -41,4 +41,5 @@ display: flex;
     text-align: center;
     text-decoration: none;
     color: var(--brand-primary);
+    padding-bottom: 20px;
 }
