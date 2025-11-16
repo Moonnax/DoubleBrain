@@ -197,6 +197,13 @@ padding-left: 10px; ;
   padding-left: 10px;
 }
 
+#assunt-title{
+font-size: 26px;
+padding-bottom: 15px;
+margin: auto 0;
+text-align: center;
+color: var(--brand-primary);
+}
 .visual-percent-background {
 width: 250px;
 height: 28px;
@@ -306,7 +313,38 @@ border-radius: 20px;
 
 }
 
+/*pág QUEM SOMOS  */
+.centralize {
+    text-align: center;
+}
 
+.side {
+    border: 0.125rem solid #010817;
+    padding: 1.25rem;
+    margin: 0.625rem;
+    background-color: white;
+    width: 18.75rem;
+    height: auto;
+    display: inline-block;
+
+}
+
+.fotoavatar {
+    max-width: 18.75rem;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 1.25rem auto;
+}
+
+    .mobile-click {
+        font-size: 1.125rem;
+        padding: 0.625rem;
+    }
+
+    .mobile-click-link {
+        padding: 0.3125rem;
+    }
 
 
 /* TABLET (mínimo 768px) */
