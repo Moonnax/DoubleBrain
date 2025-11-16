@@ -1,19 +1,5 @@
 /*menu lateral  */
 
-.address-dialog {
-  z-index: 20;
-  position: fixed;
-  top: 0; /* Começa no topo */
-  right: -100%;
-  width: 100%;
-  height: 100vh;
-  padding: 1rem;
-  background-color: var(--interface-light);
-  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.1);
-  transition: right 0.3s ease-out; 
-  border-radius: 0;
-}
-
 .menu-lateral-position{
     z-index: 20;
   position: fixed;
@@ -22,7 +8,7 @@
   width: 100%;
   height: 100vh;
   padding: 0.5rem 0;
-  background-color: var(--interface-light);
+  background-color: white;
   box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.1);
   transition: right 0.3s ease-out; 
   border-radius: 0;
@@ -64,7 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: .5rem;
+  margin-bottom: 20px;
 }
 
 .menu-lateral-title{

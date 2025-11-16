@@ -1,2 +1,92 @@
 <!-- Página para tirar dúvidas comuns do usuário sobre o projeto ou solução desenvolvida.
- -->
+ --><!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoubleBrain</title>
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/icon-button.css" />
+    <link rel="stylesheet" href="./css/sobre.css">
+
+  </head>
+  <body>
+    <header class="header">
+       <div>
+        <button id="menu-lateral">
+        <i data-lucide="menu"></i>
+        </button>
+      </div>
+      <div class="doublebrain">
+        <img src="./assets/img/nome.png" alt="DoubleBrain🧠">
+      </div>
+      <div class="sinapse-counting">
+        <img src="./assets/img/logo.png" alt="🧠">
+      </div>
+    </header>
+    <main>
+      <!-- menu fixo inferior -->
+    <nav id="navigation">
+      <ul class="menu">
+        <li class="menu-item">
+          <a class="menu-link" href="index.html">
+            <i data-lucide="home" class="icon-menu"></i>
+            <span>Início</span>
+          </a>
+        </li>
+        <li class="menu-item ">
+          <a class="menu-link " href="praticar.html">
+            <i data-lucide="zap" class="icon-menu"></i>
+            <span>Praticar</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="trilhas.html">
+            <i data-lucide="book" class="icon-menu"></i>
+            <span>Trilhas</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+   
+  </main>
+
+    <!-- ALTERAR ABAIXO PARA O MENU LATERAL -->
+    <section class="menu-lateral-position">
+      <header class="dialog-header">
+        <h2 class="menu-lateral-title">menu</h2>
+        <button id="close-button" class="icon-button" aria-label="Fechar">
+          <i data-lucide="x"></i>
+        </button>
+      </header>
+      <div>
+        <ul class="menu-lateral">
+          <li class="menu-lateral-item"><a href="faq.html">Perguntas Frequentes</a></li>
+          <li class="menu-lateral-item"><a href="contato.html">Contato</a></li>
+          <li class="menu-lateral-item"><a href="quemsomos.html">Quem Somos</a></li>
+          <li class="menu-lateral-item"><a href="sobre.html">Sobre o DoubleBrain</a></li>
+          
+        </ul>
+      </div>
+
+    </section>
+
+
+  
+  <footer>
+
+  </footer>
+
+
+      <script src="./js/script.js"></script>
+    <script src="./js/dialog.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

@@ -1,6 +1,139 @@
-oq ter dentro da máteria selecionada: 
+<!-- oq ter dentro da máteria selecionada: 
 
 ja revisados
 quantos faltam revisar
 
--roadmap - trilha da matéria
+-roadmap - trilha da matéria -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoubleBrain</title>
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/dialog.css" />
+    <link rel="stylesheet" href="./css/input.css" />
+    <link rel="stylesheet" href="./css/icon-button.css" />
+    <link rel="stylesheet" href="./css/sobre.css">
+  </head>
+  <body>
+    <header class="header">
+       <div>
+        <button id="menu-lateral">
+        <i data-lucide="menu"></i>
+        </button>
+      </div>
+      <div class="doublebrain">
+        <img src="./assets/img/nome.png" alt="DoubleBrain🧠">
+      </div>
+      <div class="sinapse-counting">
+        <img src="./assets/img/logo.png" alt="🧠">
+      </div>
+    </header>
+    <main>
+<div>
+    <img src="./assets/img/logo.png" alt="🧠" class="logo">
+    <img src="./assets/img/nome.png" alt="DoubleBrain" class="logo-nome">
+</div>
+<article class="sobre">
+    <section class="about-text">
+        <p>O DoubleBrain é um sistema de requalificação inteligente que usa inteligência artificial para ajudar profissionais a fortalecer as bases de conhecimento essenciais antes de avançar para novos aprendizados.</p>
+    </section>
+    <section class="about-insight">
+        <p>É a ferramenta ideal pra profissionais híbridos, estudantes e empresas que querem crescer com a base sólida sempre em dia!</p>
+    </section>
+    <section>
+        <h1 id="h1">O DoubleBrain nasceu pra resolver um problema real do futuro do trabalho: </h1>
+        <p class="about-text">
+         Nós aprendemos cada vez mais, mas lembramos cada vez menos. Usando a IA para manter o conhecimento vivo, ajudamos profissionais a se requalificarem de forma contínua e adaptada a sua rotina.   
+        </p>
+    </section>
+    <section>
+        <h1 id="h1">Aprendizagem Adaptativa</h1>
+        <p class="about-text">A IA atua como um mentor digital, fazendo perguntas rápidas, propondo microdesafios e revisando conceitos fundamentais das áreas de interesse do usuário, tudo de forma personalizada.</p>
+    </section>
+    
+</article>
+<a href="faq.html" id="a">Dúvidas? clique aqui</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- menu fixo inferior -->
+    <nav id="navigation">
+      <ul class="menu">
+        <li class="menu-item">
+          <a class="menu-link" href="index.html">
+            <i data-lucide="home" class="icon-menu"></i>
+            <span>Início</span>
+          </a>
+        </li>
+        <li class="menu-item ">
+          <a class="menu-link " href="praticar.html">
+            <i data-lucide="zap" class="icon-menu"></i>
+            <span>Praticar</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="trilhas.html">
+            <i data-lucide="book" class="icon-menu"></i>
+            <span>Trilhas</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+   
+  </main>
+
+    <!-- ALTERAR ABAIXO PARA O MENU LATERAL -->
+    <section class="menu-lateral-position">
+      <header class="dialog-header">
+        <h2 class="menu-lateral-title">menu</h2>
+        <button id="close-button" class="icon-button" aria-label="Fechar">
+          <i data-lucide="x"></i>
+        </button>
+      </header>
+      <div>
+        <ul class="menu-lateral">
+          <li class="menu-lateral-item"><a href="faq.html">Perguntas Frequentes</a></li>
+          <li class="menu-lateral-item"><a href="contato.html">Contato</a></li>
+          <li class="menu-lateral-item"><a href="quemsomos.html">Quem Somos</a></li>
+          <li class="menu-lateral-item"><a href="sobre.html">Sobre o DoubleBrain</a></li>
+          
+        </ul>
+      </div>
+
+    </section>
+
+
+  
+  <footer>
+
+  </footer>
+
+
+      <script src="./js/script.js"></script>
+    <script src="./js/dialog.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

@@ -9,24 +9,24 @@
     <link rel="stylesheet" href="./css/dialog.css" />
     <link rel="stylesheet" href="./css/input.css" />
     <link rel="stylesheet" href="./css/icon-button.css" />
+    <link rel="stylesheet" href="./css/sobre.css">
+
   </head>
   <body>
     <header class="header">
-            <div>
+       <div>
         <button id="menu-lateral">
-          <i data-lucide="menu"></i>
+        <i data-lucide="menu"></i>
         </button>
       </div>
-      <div>
-        <img src="/assets/img/logo-nome.png" alt="DoubleBrain🧠">
+      <div class="doublebrain">
+        <img src="./assets/img/nome.png" alt="DoubleBrain🧠">
       </div>
       <div class="sinapse-counting">
-        <img src="/assets/img/logo.png" alt="🧠">
+        <img src="./assets/img/logo.png" alt="🧠">
       </div>
     </header>
-<main>
-
-
+    <main>
       <!-- menu fixo inferior -->
     <nav id="navigation">
       <ul class="menu">
@@ -36,8 +36,8 @@
             <span>Início</span>
           </a>
         </li>
-        <li class="menu-item">
-          <a class="menu-link" href="praticar.html">
+        <li class="menu-item ">
+          <a class="menu-link " href="praticar.html">
             <i data-lucide="zap" class="icon-menu"></i>
             <span>Praticar</span>
           </a>
@@ -51,55 +51,30 @@
       </ul>
     </nav>
    
+  </main>
 
     <!-- ALTERAR ABAIXO PARA O MENU LATERAL -->
-    <section class="address-dialog">
+    <section class="menu-lateral-position">
       <header class="dialog-header">
-        <h2 class="dialog-title">Alterar endereço de entrega</h2>
+        <h2 class="menu-lateral-title">menu</h2>
         <button id="close-button" class="icon-button" aria-label="Fechar">
           <i data-lucide="x"></i>
         </button>
       </header>
-      <form>
-        <div class="form-input">
-          <label class="sr-only" for="cep">Cep</label>
-          <input class="text-field" type="text" id="cep" name="cep" placeholder="Digite o CEP" value="09060-050">
-        </div>
-        <div class="form-input">
-          <label class="sr-only" for="street">Rua</label>
-          <input class="text-field" type="text" id="street" name="street" required disabled value="Rua Xingu">
-        </div>
-        <div class="form-grid">
-          <div class="form-input input-small">
-            <label class="sr-only" for="number">Número</label>
-            <input class="text-field" type="text" id="number" name="number" required disabled value="12354">
-          </div>
-          <div class="form-input">
-            <label class="sr-only" for="additional">Complemento</label>
-            <input class="text-field" type="text" id="additional" name="additional" required disabled value="Apto 101">
-          </div>
-        </div>
-        <div class="form-input">
-          <label class="sr-only" for="neighborhood">Bairro</label>
-          <input class="text-field" type="text" id="neighborhood" name="neighborhood" required disabled value="Vila Xingu">
-        </div>
-        <div class="form-grid">
-          <div class="form-input">
-            <label class="sr-only" for="city">Cidade</label>
-            <input class="text-field" type="text" id="city" name="city" required disabled value="São Paulo">
-          </div>
-          <div class="form-input input-small">
-            <label class="sr-only" for="state">Estado</label>
-            <input class="text-field" type="text" id="state" name="state" required disabled value="SP">
-          </div>
-        </div>
-        <button class="button primary full">Cadastrar</button>
-      </form>
+      <div>
+        <ul class="menu-lateral">
+          <li class="menu-lateral-item"><a href="faq.html">Perguntas Frequentes</a></li>
+          <li class="menu-lateral-item"><a href="contato.html">Contato</a></li>
+          <li class="menu-lateral-item"><a href="quemsomos.html">Quem Somos</a></li>
+          <li class="menu-lateral-item"><a href="sobre.html">Sobre o DoubleBrain</a></li>
+          
+        </ul>
+      </div>
+
     </section>
 
-  </main>
 
-  <!-- para dsktop -->
+  
   <footer>
 
   </footer>

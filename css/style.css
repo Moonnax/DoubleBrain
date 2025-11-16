@@ -26,7 +26,8 @@ main {
   overflow-y: auto;
   padding-bottom: 70px;
   height: 100vh;
-    padding-left: 22px;
+  padding: 10px 10px ;
+  padding-bottom: 80px;
 
 }
 img {
@@ -51,10 +52,10 @@ img {
 }
 
 
+
+
 /* menu fixo embaixo */
-.logo {
-  
-}
+
 
 #navigation {
   z-index: 10;
@@ -94,20 +95,8 @@ img {
   }
 }
 
-/* SAUDAÇÕES */
-.greeting-user {
-  display: flex;
-  flex-direction: column;
-  height:62px ;
-  width: 335px;
-  background-color: #F6D6FF;
-  border-radius: 20px;
-  justify-content: center;
-  & p {
 
-  }
-  
-}
+/* HEADER IMAGENS E ICON */
 
  .header {
 
@@ -122,26 +111,87 @@ img {
   top: 0; 
   height: 70px; 
   width: 100%; 
-  z-index: 20;  /* isso aq faz o header descer em cima do conteudoe nao o conteudo passar por cima dele */
+  z-index: 20;  /* isso aq faz o header descer em cima do conteudo e nao o conteudo passar por cima dele */
   background-color: white;
 
-
   }
+
+.logo {
+  display: flex;
+  margin: 0 auto;
+  width: 140px;
+  height: auto;
+  padding: 20px 0;
+
+}
+
+.logo-nome{
+ display: flex;
+  margin: 0 auto;
+  width: 170px;
+  height: auto;
+  margin-bottom: 40px;
+
+}
+.doublebrain {
+width: 150px;
+height: auto;
+}
+
+svg{
+width: 50px;
+height: auto;
+}
+
+.sinapse-counting{
+height: auto;
+width: 50px;
+padding-left: 10px; ;
+}
+
+
+/* SAUDAÇÕES */
+.greeting-user {
+  display: flex;
+  flex-direction: column;
+  height:62px ;
+  width: 335px;
+  background-color: #F6D6FF;
+  border-radius: 20px;
+  justify-content: center;
+  padding-left: 15px;
+  margin: 0px auto;
+  margin-bottom: 15px;
+  gap: 3px;
+  & p {
+  font-size: 20px;
+  }
+  
+}
+
+
 
   /* SCORE */
 
 .score {
+    margin: 0 auto;
+    margin-bottom: 15px;
+
 }
 
 .evolution{
   display: flex;
+  width: auto;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 .section-title {
-  font-size: 26px; ;
+  font-size: 26px;
+  padding-left: 10px;
 }
 
 .visual-percent-background {
-width: 276px;
+width: 250px;
 height: 28px;
 background-color: var(--brand-primary-light);
 border-radius: 20px;
@@ -154,6 +204,14 @@ background-color: var(--brand-primary-light);
 border-radius: 20px;
 }
 
+.dominate {
+  text-align: center;
+}
+
+.focus {
+    margin-bottom: 20px;
+
+}
 .focus-day {
   display: flex;
   flex-direction: column;
@@ -164,6 +222,8 @@ border-radius: 20px;
   background-color: var(--brand-primary); 
   color: white;
   border-radius: 20px;
+  margin: 0 auto;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
 
 }
 
@@ -182,6 +242,10 @@ border-radius: 20px;
   padding: 0 130px;
 }
 
+.cards-menu{
+    margin: 0 auto;
+
+}
 .cards-menu-visual {
   display: flex;
   flex-direction: column;
@@ -192,11 +256,13 @@ border-radius: 20px;
   background-color: var(--interface-green); 
   color: white;
   border-radius: 20px;
+    margin: 0 auto;
+
 }
+
 
 .lateral-align {
   display: flex;
-  gap:22px ;
 }
 
 .quiz-description-visual{
@@ -210,6 +276,8 @@ border-radius: 20px;
   border-radius: 20px;
   padding:0 16px;
   align-items: center;
+  margin: 0 auto;
+
 
   & p {
       width: 150px;
@@ -227,6 +295,7 @@ border-radius: 20px;
   width: 330px;
   height: 245px;
   border-radius: 20px;
+  margin: 0 auto;
 
 }
 
