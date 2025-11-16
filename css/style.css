@@ -232,6 +232,10 @@ border-radius: 20px;
 .focus {
     margin-bottom: 20px;
 
+    & a{
+text-decoration: none;
+    }
+
 }
 .focus-day {
   display: flex;
@@ -250,7 +254,7 @@ border-radius: 20px;
 
 .focus-day p {
   margin: 0;
-  margin-top: 15px;
+  margin: 15px 0;
   font-size: 1.5em;
   font-weight: 600;
 }
@@ -517,6 +521,85 @@ text-align: center;
   left: 50%;
   transform: translateX(-50%);
 }
+
+
+
+/* FLASHCARDS PAGINA */
+
+#card-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 280px;
+  height: 400px;
+  background-color: var(--interface-green);
+  border-radius: 20px;
+  & span {
+    padding: 15px;
+    margin-top: auto;
+  }
+  & a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+.pergunta-card {
+  font-size: 24px;
+}
+.resposta-card {
+  display: none;
+font-size: 18px;
+}
+
+.central{
+  margin: 25px 0;
+  font-size: 22px;
+  text-align: center;
+    
+}
+
+
+/* TIMER  */
+
+.timer {
+  border: 2px solid #E8E8E8;
+  border-radius: 20px;
+  margin: 20px;
+  width: 280px;
+  margin: 0 auto;
+}
+#cronometro {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--brand-primary); /* Cor da sua marca */
+}
+
+.timer-container {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
 /* TABLET (mínimo 768px) */
 @media (min-width: 768px) {
 }
