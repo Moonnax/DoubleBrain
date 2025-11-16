@@ -146,6 +146,12 @@ height: auto;
 width: 50px;
 height: auto;
 }
+#svg-big{
+width: 100px;
+height: auto;
+color:#E8E8E8 ;
+padding-top: 5px;
+}
 
 .sinapse-counting{
 height: auto;
@@ -195,6 +201,7 @@ padding-left: 10px; ;
   padding-left: 10px;
 }
 
+
 #assunt-title{
 font-size: 26px;
 padding: 15px 0;
@@ -220,6 +227,8 @@ border-radius: 20px;
   text-align: center;
 }
 
+
+/* FOCO DO DIA */
 .focus {
     margin-bottom: 20px;
 
@@ -254,6 +263,8 @@ border-radius: 20px;
   padding: 0 130px;
 }
 
+
+/* CARDS no menu */
 .cards-menu{
     margin: 0 auto;
     margin-bottom: 20px;
@@ -278,11 +289,12 @@ border-radius: 20px;
 }
 
 
-
 .lateral-align {
   display: flex;
 }
 
+
+/* QUIZ */
 .quiz-menu{
   margin-bottom: 20px;
 
@@ -314,6 +326,7 @@ border-radius: 20px;
   }
 }
 
+/* PROGRESSO */
 .progress-visual {
   background-color: #F3F3F5 ;
   width: 330px;
@@ -420,6 +433,90 @@ color: var(--brand-primary);
 }
 }
 
+
+/* PÁGINA TRILHAS */
+
+.select-trilha{
+  display: flex;
+  flex-direction: column;
+  height:45px ;
+  width: 335px;
+  background-color: var(--brand-primary);
+  border-radius: 20px;
+  justify-content: center;
+  margin: 0px auto;
+  margin-bottom: 15px;
+  gap: 3px;
+  & p {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+text-align: center;
+  }
+  
+}
+
+.trilhas-choice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.trilhas-choice div {
+  width: 150px;
+  height: 190px;
+  margin: 10px;
+
+}
+
+.trilhas-choice a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.trilhas-choice img svg{
+  height: 120px;
+  width: 140px;
+  margin: 0;
+  border: 2px solid #E8E8E8;
+  border-radius: 15px;
+  background-color: #F6D6FF;
+  object-fit: cover;
+}
+
+
+#more {
+ height: 115px;
+  width: 140px;
+  background-color: white;
+  border-radius: 20px;
+  border: 4px solid #E8E8E8;
+  justify-content: center;
+  padding-left: 15px;
+  margin: 0px auto;
+  gap: 3px;
+}
+
+.trilhas-choice p {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+.endpage {
+  position: absolute;
+  bottom: 70px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
 /* TABLET (mínimo 768px) */
 @media (min-width: 768px) {
 }
