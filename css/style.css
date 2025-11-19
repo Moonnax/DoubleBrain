@@ -153,6 +153,16 @@ color:#E8E8E8 ;
 padding-top: 5px;
 }
 
+#svg-quiz{
+width: 50px;
+height: 50px;
+color: var(--brand-primary);
+& svg{
+width: 50px;
+height: 50px;
+}
+}
+
 .sinapse-counting{
 height: auto;
 width: 50px;
@@ -208,12 +218,6 @@ padding: 15px 0;
 margin: auto 0;
 text-align: center;
 color: var(--interface-green);
-}
-.visual-percent-background {
-width: 250px;
-height: 28px;
-background-color: var(--brand-primary-light);
-border-radius: 20px;
 }
 
 .visual-percent-background {
@@ -537,7 +541,7 @@ text-align: center;
   scrollbar-width: none; 
   justify-content: unset; 
   align-items: unset;
-  margin-bottom: 25px;
+  margin: 50px 0;
 }
 
 .card {
@@ -580,31 +584,120 @@ text-align: center;
 }
 
 .central{
-  margin: 25px 0;
+  margin-top: 35px;
   font-size: 22px;
   text-align: center;
 }
 
 
-/* TIMER  */
 
+/* PÁGINA QUIZ */
+.intro-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  & a {
+    width: 85px;
+    height: 35px;
+  }
+}
+
+.intro-flex h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+/* TIMER  */
 .timer {
-  border: 2px solid #E8E8E8;
-  border-radius: 20px;
-  margin: 20px;
-  width: 280px;
-  margin: 0 auto;
-}
-#cronometro {
-    font-size: 2em;
-    font-weight: 700;
-    color: var(--brand-primary); /* Cor da sua marca */
+border: 2px solid #E8E8E8;
+border-radius: 15px;
+width: 85px;
+height: 28px;
+margin: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-.timer-container {
-    text-align: center;
-    margin: 10px 0;
+#cronometro {
+font-size: 1.5rem;
+font-weight: 700;
+color: var(--interface-green);
+margin: 0;
+
 }
+.timer-container {
+text-align: center;
+margin: 2px 0;
+justify-content: center;
+}
+
+.quiz-title {
+  font-size: 24px;
+  padding-left: 15px;
+  margin: 20px 0;
+
+}
+
+.quiz-question {
+  border: 2px solid var(--interface-border);
+  background-color: white ;
+  width: 330px;
+  height: 150px;
+  border-radius: 20px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.evolution-quiz{
+  display: flex;
+  width: auto;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--interface-border);
+  background-color: white ;
+  width: 330px;
+  height: 50px;
+  border-radius: 20px;
+  margin: 12px auto;
+}
+
+.position-resp{
+  margin-left:10px ;
+}
+
+
+.timer-quiz{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 7px;
+width: 330px;
+height: 50px;
+margin: 10px auto;
+}
+
+
+.visual-percent-background-quiz {
+width: 222px;
+height: 28px;
+background-color: var(--brand-primary-light);
+border-radius: 20px;
+}
+/* barra alinhar ela com o quadrado da pergunta
+jogar o */
+
 
 
 /* TABLET (mínimo 768px) */
