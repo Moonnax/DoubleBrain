@@ -211,6 +211,11 @@ padding-left: 10px; ;
   padding-left: 10px;
 }
 
+.score-title {
+  font-size: 26px;
+  padding-left: 10px;
+}
+
 
 #assunt-title{
 font-size: 26px;
@@ -314,7 +319,7 @@ text-decoration: none;
   justify-content: space-between;
   width: 330px;
   height: 105px;
-  background-color: var(--brand-primary); 
+  background-color: var(--brand-primary-light); 
   color: white;
   border-radius: 20px;
   padding:0 16px;
@@ -325,6 +330,7 @@ text-decoration: none;
   & p {
       width: 150px;
         justify-content: left;
+        color: black;
 
   }
 
@@ -740,7 +746,124 @@ border-radius: 20px;
 
 /* TABLET (mínimo 768px) */
 @media (min-width: 768px) {
+
+
+        /* pág menu inicial */
+.medium-gretting-user{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 0;
 }
+
+.focus {
+  .focus-day {
+  width: 90%;
+}
+}
+
+.section-title {
+ margin-bottom: 25px;
+ text-align: center;
+ margin-left: 15px;
+
+}
+
+
+.cards-menu{
+    margin: 20px;
+
+}
+
+.cards-menu-visual {
+  width: 200px;
+  height: 300px;
+  font-size: 22px;
+margin: 0 20px;
+}
+
+.medium-position-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+  & h1 {
+    text-align: left;
+  }
+
+}
+
+.quiz-menu {
+  margin: 20px;
+}
+.quiz-description-visual{
+  width: 450px;
+  height: 200px;
+  margin: 0 20px;
+
+  & img{
+  width: 120px;
+  }
+
+  & p {
+    font-size: 20px;
+  }
+}
+
+#a {
+    display: flex;
+    margin: 1px;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    text-decoration: none;
+    color: var(--brand-primary);
+    padding-bottom: 20px;
+}
+
+.progress-menu {
+  margin: 20px;
+  & h1{
+    margin-bottom: 20px;
+    margin-top: 10px;
+     text-align: left;
+     padding-left: 0;
+  }
+}
+
+.progress-visual {
+  background-color: #F3F3F5 ;
+  width: 250px;
+  height: 595px;
+  border-radius: 20px;
+  margin: 0 auto;
+
+}
+
+.main-layout {
+  display:flex
+}
+
+.header{
+ & svg{
+width: 100px;
+height: auto;
+
+}
+
+.doublebrain {
+width: 180px;
+
+}
+
+.sinapse-counting{
+width: 60px;
+}
+}
+}
+
+
+
 
 /* DESKTOP (mínimo 992px) */
 @media (min-width: 992px) {
