@@ -696,9 +696,46 @@ height: 28px;
 background-color: var(--brand-primary-light);
 border-radius: 20px;
 }
-/* barra alinhar ela com o quadrado da pergunta
-jogar o */
 
+
+/* PÁG PRATICAR RESUMO*/
+
+.article-resume {
+  margin: 0 auto;
+
+  & p {
+    margin: 15px;
+    text-align: left;
+  }
+
+  & h1 {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 15px;
+
+}
+
+  & h2 {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 15px;
+
+}
+
+  & h3 {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 15px;
+
+}
+& div {
+  margin: 10px 15px;
+  
+}
+}
 
 
 /* TABLET (mínimo 768px) */
