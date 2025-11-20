@@ -743,6 +743,12 @@ border-radius: 20px;
 }
 }
 
+h1.title-center {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
 
 /* TABLET (mínimo 768px) */
 @media (min-width: 768px) {
@@ -868,6 +874,12 @@ width: 60px;
 
 .dialog-header {
 height: 60px;
+
+& button{
+    transform: scale(1.5);
+    margin-right: 20px;
+
+}
 }
 
 .menu-lateral-item{
@@ -891,9 +903,25 @@ height: 60px;
   }
 }
 
+/* pag  praticar */
+.title-center {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
 }
 
+.card-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.card {
+  max-width: 320px;
+  width: 100%;
+}
+}
 
 
 /* DESKTOP (mínimo 992px) */
