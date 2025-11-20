@@ -860,6 +860,37 @@ width: 180px;
 width: 60px;
 }
 }
+
+
+/* MENU LATERAL */
+
+
+
+.dialog-header {
+height: 60px;
+}
+
+.menu-lateral-item{
+  height: 100px;
+ 
+    & li {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+}
+
+.menu-lateral-title{
+  font-size: 40px !important;
+  font-weight: 700;
+  color: var(--text-darkest);
+  padding: 0 10px;
+
+    & h2 {
+    font-size: 50px;
+    padding-left: 20px;
+  }
+}
+
 }
 
 
