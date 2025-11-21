@@ -70,6 +70,15 @@
   text-align: center;
 }
 
+.sobre .aboutus-text {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 24px auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
 
   .about-insight {
     width: 100%;

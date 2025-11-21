@@ -1032,6 +1032,54 @@ font-size: 24px;
     font-size: 20px;
   }
 }
+
+/* pág quem somos */
+
+#whoare {
+  font-size: 24px;
+    text-align: center;
+  margin: 0 25px ;
+
+}
+
+
+
+.centralize {
+    text-align: center;
+}
+
+.side {
+    border: 0.125rem solid #010817;
+    padding: 1.25rem;
+    margin: 0.625rem;
+    background-color: white;
+    width: 28rem;
+    height: auto;
+    display: inline-block;
+
+}
+
+.fotoavatar {
+    max-width: 18.75rem;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 1.25rem auto;
+}
+
+    .mobile-click {
+        font-size: 1.125rem;
+        padding: 0.625rem;
+    }
+
+    .mobile-click-link {
+        padding: 0.3125rem;
+        text-decoration: none;
+        color: var(--brand-primary);
+    }
+
+
+    
 }
 
 
