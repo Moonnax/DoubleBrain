@@ -1120,47 +1120,52 @@ margin: 0 10px;
   }
 }
 
+/* pág trilhas */
 
+.select-trilha{
 
+  height:50px ;
+  width: 700px;
 
-
-
-.timer {
-width: 120px;
-height: 60px;
-margin: 4px;
+  & p {
+  font-size: 28px;
+  }
+  
 }
 
-#cronometro {
-font-size: 2rem;
-font-weight: 700;
-color: var(--interface-green);
-margin: 0;
-
-}
-.timer-container {
-text-align: center;
-margin: 2px 0;
-justify-content: center;
-}
-
-.quiz-title {
-  font-size: 24px;
-  padding-left: 15px;
-  margin: 20px 0;
-
-}
-
-.evolution-quiz{
+.trilhas-choice {
   display: flex;
-  width: auto;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
 }
 
+.trilhas-choice div {
+  width: 220px;
+  height: 220px;
+  margin: 10px;
 
+}
 
+.trilhas-choice a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.trilhas-choice img svg{
+  height: 120px;
+  width: 140px;
+  margin: 0;
+  border: 2px solid #E8E8E8;
+  border-radius: 15px;
+  background-color: #F6D6FF;
+  object-fit: cover;
+}
 
 
 }
