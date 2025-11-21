@@ -43,3 +43,42 @@
     color: var(--brand-primary);
     padding-bottom: 20px;
 }
+
+
+
+.sobre {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 16px; 
+}
+
+.sobre > section > h1.title-center {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  margin: 24px auto 12px auto;
+  text-align: center;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+
+.sobre .about-text {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 24px auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+  .about-insight {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 25px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* permite crescer verticalmente se necessário */
+  }
