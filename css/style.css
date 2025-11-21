@@ -961,12 +961,51 @@ border-radius: 20px;
   }
 
    .about-insight {
-    width: 100%;              /* ocupa toda a largura possível */
-    max-width: 1200px;        /* controla o limite final da largura */
-    margin: 0 auto;           /* centraliza */
-    padding: 25px 40px;       /* aumenta o respiro interno */
-    border-radius: 20px;      /* opcional, mas fica bonito */
+    width: 100%;             
+    max-width: 1200px;        
+    margin: 0 auto;           
+    padding: 25px 40px;  
+    border-radius: 20px;      
   }
+
+
+  /* pág faq */
+
+.question{
+margin-bottom: 50px;
+width: 100%;
+height:auto;
+padding: 0 10px;
+
+
+
+}
+
+#pergunta{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+
+#resp{
+margin: 0 auto;
+margin-bottom: 40px;
+text-align: justify;
+font-size: 20px;
+width: 80%;
+text-align: center;
+
+}
+
+#assunt-title{
+font-size: 40px;
+padding: 20px 0;
+margin: auto 0;
+text-align: center;
+color: var(--interface-green);
+}
 }
 
 
