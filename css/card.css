@@ -1,0 +1,72 @@
+
+/* FLASHCARDS PAGINA  e CARROSSEL ROLAGEM*/
+
+/* CARROSSEL BASE */
+
+.card-align::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+
+  background-color: var(--interface-green);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* MOBILE */
+.card {
+  width: 280px;
+  height: 380px;
+}
+
+
+/* conteúdo interno */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  & span {
+      padding: 15px;
+  margin-top: auto;
+
+  & a {
+    text-decoration: none;
+  color: var(--brand-primary);
+  }
+  }
+}
+
+.central{
+  margin: 35px 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+    /* PÁG FLASHCARDS */
+@media (min-width: 768px) {
+
+  .card {
+    width: 330px;
+    height: 400px;
+  }
+
+
+    .pergunta-card {
+      font-size: 26px;
+    }
+
+  }

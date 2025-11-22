@@ -1,0 +1,141 @@
+.carousel {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  display: flex;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  width: 280px;
+  height: 330px;
+  white-space: normal;
+  padding: 0 1rem;
+  flex: 0 0 auto;
+margin: 10px;
+  background-color: var(--interface-green);
+  border-radius: 20px;
+}
+
+.carousel-item-title {
+  padding: 10px;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-darkest);
+  margin-top: 30px;
+}
+
+.carousel-item-resposta {
+  font-weight: 500;
+  color: var(--text-base);
+   margin-top: 25px;
+  font-size: 18px;
+
+  display: none;
+}
+
+
+/* TABLET (entre 768px e 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .carousel {
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .carousel-item {
+    width: 340px;   /* aumenta o tamanho do card */
+    height: 360px;  /* ajusta a altura */
+    margin: 15px;
+  }
+
+  .carousel-item-title {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .carousel-item-resposta {
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+
+@media (min-width: 1280px) {
+  .carousel {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    scroll-snap-type: x mandatory;
+    anchor-name: --carousel;
+    scroll-marker-group: after;
+  }
+
+  .carousel::scroll-marker-group {
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .carousel-item {
+    scroll-snap-align: start;
+  }
+
+  .carousel-item::scroll-marker {
+    content: "";
+    width: .5rem;
+    height: .5rem;
+    background-color: var(--interface-base);
+    border-radius: 50%;
+  }
+
+  .carousel-item::scroll-marker:target-current {
+    background-color: var(--brand-primary);
+  } 
+
+  .carousel::scroll-button(left),
+  .carousel::scroll-button(right) {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: .75rem;
+    border: 1px solid var(--interface-border);
+    background-color: var(--brand-primary-light);
+    color: var(--brand-primary);
+    border-radius: 50%;
+    cursor: pointer;
+    content: "\279E";
+    position: fixed;
+    position-anchor: --carousel;
+    
+  }
+
+  .carousel::scroll-button(left):disabled ,
+  .carousel::scroll-button(right):disabled {
+    color: var(--text-light);
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .carousel::scroll-button(left) {
+    transform: rotate(180deg);
+    position-area: left center;
+    translate: 20%;
+    
+  }
+  .carousel::scroll-button(right) {
+    position-area: right center;
+    translate: -20%;
+  }
+}
+}
