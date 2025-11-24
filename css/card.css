@@ -1,7 +1,8 @@
 
 /* FLASHCARDS PAGINA  e CARROSSEL ROLAGEM*/
 
-/* CARROSSEL BASE */
+/* CARROSSEL */
+
 
 .card-align::-webkit-scrollbar {
   display: none;
@@ -9,64 +10,198 @@
 
 .card {
   flex: 0 0 auto;
-  scroll-snap-align: center;
-
-  background-color: var(--interface-green);
   border-radius: 20px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-/* MOBILE */
-.card {
   width: 280px;
-  height: 380px;
+   height: 400px;
+     perspective: 1000px;
+  position: relative;
 }
 
-
-/* conteúdo interno */
+/* conteúdo dos card */
+/* container que vira */
 .card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
   width: 100%;
   height: 100%;
-
-  & span {
-      padding: 15px;
-  margin-top: auto;
-
-  & a {
-    text-decoration: none;
-  color: var(--brand-primary);
-  }
-  }
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
+
+/* o flip */
+.card-content.flipped {
+  transform: rotateY(180deg);
+}
+
+/* faces */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* iOS */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 280px;
+}
+
+/* frente */
+.card-front {
+  background: var(--interface-green);
+  color: white;
+}
+
+/* verso */
+.card-back {
+  background: var(--brand-primary);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.pergunta-card {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.resposta-card {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 
 .central{
   margin: 35px 0;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
+  padding: 0 20px;
+  margin-top: 40px; 
+
 }
 
 
-    /* PÁG FLASHCARDS */
-@media (min-width: 768px) {
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
 
-  .card {
-    width: 330px;
-    height: 400px;
+.carousel-item.flipped .card-content {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.card-front {
+  background-color: var(--interface-green);
+  color: white;
+}
+
+.card-back {
+  background-color: var(--brand-primary);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.pergunta-card {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.resposta-card {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.card-action {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.flip-btn {
+  background: white;
+  color: var(--interface-green);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+
+.flip-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item.flipped .flip-btn {
+  background: white;
+  color: var(--brand-primary);
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .card-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
   }
 
+  .card {
+  width: 330px;
+  height: 400px;
+}
 
-    .pergunta-card {
-      font-size: 26px;
-    }
+
+}
+
+@media (min-width: 992px) {
+
+
+.card-wrapper{
+display: flex;
+justify-content: space-around;
+
+}
+
+
 
   }

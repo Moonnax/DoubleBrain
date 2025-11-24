@@ -79,15 +79,31 @@
 }
 
 
+@media (min-width: 992px) {
 
-  .about-insight {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto 40px;
-    padding: 25px 40px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto; /* permite crescer verticalmente se necessário */
-  }
+/* página sobre */
+
+.about-insight {
+  justify-content: space-around;
+  width: 80%;
+
+}
+.sobre .about-text {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto 24px auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+}
+
+
+
+/* DESKTOP GRANDE (mínimo 1300px) */
+@media (min-width: 1300px) {
+
+  .sobre .about-text {
+  max-width: 70%;
+}
+}

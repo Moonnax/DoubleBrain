@@ -19,11 +19,13 @@
         <i data-lucide="menu" id="svg"></i>
         </button>
       </div>
+      <div class="desk-logo">
       <div class="doublebrain">
-        <img src="./assets/img/nome.png" alt="DoubleBrain🧠">
+        <a href="index.html"><img src="./assets/img/nome.png" alt="DoubleBrain🧠"></a>
       </div>
       <div class="sinapse-counting">
-        <img src="./assets/img/logo.png" alt="🧠">
+        <a href="index.html"><img src="./assets/img/logo.png" alt="🧠"></a>
+      </div>
       </div>
     </header>
     <main>
@@ -40,8 +42,8 @@
 </section>
   <section class="timer-quiz">
   <div class="evolution-quiz">
-    <span class="visual-percent-background-quiz zero">
-    <span class="visual-percent-evolution"></span>
+    <span class="visual-percent-background-quiz">
+    <span class="visual-percent-evolution" id="progressBar"></span>
     </span>
   </div>
     <section class="timer">
@@ -57,19 +59,26 @@
       <p>Qual das opções abaixo é um tipo de algoritmo de busca?</p>
     </div>
     <div class="">
-    <div class="options">
+    <div class="option" data-correct="true">
       <p class="position-resp">A) Busca linear</p>
     </div>
-    <div class="options">
+    <div class="option">
       <p class="position-resp">B) Busca espiral</p>
     </div>
-    <div class="options">
+    <div class="option">
       <p class="position-resp">C) Busca nebulosa</p>
     </div>
-    <div class="options">
+    <div class="option">
       <p class="position-resp">D) Busca cruzada</p>
     </div>
     </div>
+
+    
+  <button class="conferir-btn" id="conferirBtn" disabled>
+    Conferir Resposta
+  </button>
+
+  <div class="feedback-message" id="feedbackMessage"></div>
 </section>
 
 
@@ -102,13 +111,19 @@
     <!-- MENU LATERAL -->
     <section class="menu-lateral-position">
       <header class="dialog-header">
-        <h2 class="menu-lateral-title">menu</h2>
+        <h2 class="menu-lateral-title"><a href="index.html">menu</a></h2>
         <button id="close-button" class="icon-button" aria-label="Fechar">
           <i data-lucide="x"></i>
         </button>
       </header>
       <div>
         <ul class="menu-lateral">
+          <a href="praticar.html" class="menu-lateral-item" id="hide-menu">
+            <li>Praticar</li>
+          </a>
+          <a href="trilhas.html" class="menu-lateral-item" id="hide-menu">
+            <li>Trilhas</li>
+          </a>
           <a href="faq.html" class="menu-lateral-item" >
             <li >Perguntas Frequentes</li>
           </a>
@@ -121,18 +136,28 @@
           <a href="sobre.html" class="menu-lateral-item">
             <li>Sobre o DoubleBrain</li>
           </a>
+            <a href="index.html" class="menu-lateral-item"id="hide-menu">
+            <li>Voltar ao menu inicial</li>
+              </a>
         </ul>
       </div>
     </section>
 
 
-  
   <footer>
+ <div class="footer-content">
+    <img src="./assets/img/logo.png" alt="Double Brain" class="footer-logo">
 
+    <p>© 2025 Double Brain — Projeto desenvolvido na FIAP</p>
+    <p>Todos os direitos reservados.</p>
+  </div>
   </footer>
 
 
-      <script src="./js/script.js"></script>
+    <script src="./js/quiz.js"></script>
+    <script src="./js/timer.js"></script>
+    <script src="./js/link.js"></script>
+    <script src="./js/script.js"></script>
     <script src="./js/dialog.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     

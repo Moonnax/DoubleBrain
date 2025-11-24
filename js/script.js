@@ -3,9 +3,8 @@ const userPoints = document.getElementById("userPoints");
 
 // Objeto
 const user = {
-  name: "Daniela",
-  email: "danielaisabelasales@gmail.com",
-  points: 112,
+  name: "Ubirajara",
+  email: "Ubirajarapelli@gmail.com",
 };
 
 const userData = JSON.stringify(user); // Converte objeto para string

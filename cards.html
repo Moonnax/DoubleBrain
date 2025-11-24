@@ -22,56 +22,114 @@
         <i data-lucide="menu" id="svg"></i>
         </button>
       </div>
+      <div class="desk-logo">
       <div class="doublebrain">
-        <img src="./assets/img/nome.png" alt="DoubleBrain🧠">
+        <a href="index.html"><img src="./assets/img/nome.png" alt="DoubleBrain🧠"></a>
       </div>
       <div class="sinapse-counting">
-        <img src="./assets/img/logo.png" alt="🧠">
+        <a href="index.html"><img src="./assets/img/logo.png" alt="🧠"></a>
+      </div>
       </div>
     </header>
     <main>
           <div class="select-trilha">
       <p>Algoritmos</p>
     </div>
+    <div id="bottom-margin">
+      <h1 class="central">Hora dos FlashCards</h1>
+    </div>
+        
+    <div class="carousel">
+     <div class="carousel-item">
+    <div class="card-content">
     
-        <h1 class="central">Hora dos FlashCards ⚡</h1>
+    <div class="card-front">
+      <h3 class="carousel-item-title">Algoritmos de busca são:</h3>
+    </div>
 
+    <div class="card-back">
+      <p class="carousel-item-resposta">Busca linear, busca binária, BFS, DFS, heurísticas…</p>
+    </div>
 
+  </div>
 
-
-
-
-      <div class="carousel">
+  <span class="card-action">
+    <button class="flip-btn">Ver definição</button>
+  </span>
+    </div>
      <div class="carousel-item">
-          <div class="card-content">
-          <h3 class="carousel-item-title">Algoritmos de busca são: </h3>
-          <p class="carousel-item-resposta">Busca linear, busca binária, buscas em grafos (BFS e DFS) e buscas heurísticas</p>
-          <span><a href="">ver resposta</a></span>
-          </div>
-      </div>
-     <div class="carousel-item">
-          <div class="card-content">
-          <h3 class="carousel-item-title">Algoritmos de ordenação são: </h3>
-          <p class="carousel-item-resposta">Procedimentos usados para colocar elementos em uma sequência específica.</p>
-          <span><a href="">ver resposta</a></span>
-          </div>
-       </div>   
-     <div class="carousel-item">
-          <div class="card-content">
-          <h3 class="carousel-item-title">Variáveis em programação são: </h3>
-          <p class="carousel-item-resposta">Busca linear, busca binária, buscas em grafos (BFS e DFS) e buscas heurísticas</p>
-          <span><a href="">ver resposta</a></span>
-          </div>
-        </div>
-     <div class="carousel-item">
-          <div class="card-content">
-          <h3 class="carousel-item-title">Estruturas de repetição são: </h3>
-          <p class="carousel-item-resposta">Comandos que permitem executar um bloco de código várias vezes</p>
-          <span><a href="">ver resposta</a></span>
-          </div>
-          </div>
-      </div>
+    <div class="card-content">
+    
+    <div class="card-front">
+      <h3 class="carousel-item-title">Algoritmos de ordenação são: </h3>
+    </div>
 
+    <div class="card-back">
+      <p class="carousel-item-resposta">Procedimentos usados para colocar elementos em uma sequência específica.</p>
+    </div>
+
+  </div>
+
+  <span class="card-action">
+    <button class="flip-btn">Ver definição</button>
+  </span>
+    </div>
+
+     <div class="carousel-item">
+    <div class="card-content">
+    
+    <div class="card-front">
+      <h3 class="carousel-item-title">Variáveis em programação são:</h3>
+    </div>
+
+    <div class="card-back">
+      <p class="carousel-item-resposta">Espaços na memória usados para armazenar valores durante a execução do programa.</p>
+    </div>
+
+  </div>
+
+  <span class="card-action">
+    <button class="flip-btn">Ver definição</button>
+  </span>
+    </div>
+
+
+     <div class="carousel-item">
+    <div class="card-content">
+    
+    <div class="card-front">
+      <h3 class="carousel-item-title">Estruturas de repetição são:</h3>
+    </div>
+
+    <div class="card-back">
+      <p class="carousel-item-resposta">Comandos que permitem executar um bloco de código várias vezes.</p>
+    </div>
+
+  </div>
+
+  <span class="card-action">
+    <button class="flip-btn">Ver definição</button>
+  </span>
+    </div>
+
+       <div class="carousel-item">
+    <div class="card-content">
+    
+    <div class="card-front">
+      <h3 class="carousel-item-title">Quais os tipos de algoritmos de busca?</h3>
+    </div>
+
+    <div class="card-back">
+      <p class="carousel-item-resposta">Busca linear, busca binária, buscas em grafos (BFS e DFS) e buscas heurísticas</p>
+    </div>
+
+  </div>
+
+  <span class="card-action">
+    <button class="flip-btn">Ver definição</button>
+  </span>
+    </div>
+    </div>
 
       <!-- menu fixo inferior -->
     <nav id="navigation">
@@ -99,16 +157,22 @@
    
   </main>
 
-    <!-- MENU LATERAL -->
+     <!-- MENU LATERAL -->
     <section class="menu-lateral-position">
       <header class="dialog-header">
-        <h2 class="menu-lateral-title">menu</h2>
+        <h2 class="menu-lateral-title"><a href="index.html">menu</a></h2>
         <button id="close-button" class="icon-button" aria-label="Fechar">
           <i data-lucide="x"></i>
         </button>
       </header>
       <div>
         <ul class="menu-lateral">
+          <a href="praticar.html" class="menu-lateral-item" id="hide-menu">
+            <li>Praticar</li>
+          </a>
+          <a href="trilhas.html" class="menu-lateral-item" id="hide-menu">
+            <li>Trilhas</li>
+          </a>
           <a href="faq.html" class="menu-lateral-item" >
             <li >Perguntas Frequentes</li>
           </a>
@@ -121,18 +185,27 @@
           <a href="sobre.html" class="menu-lateral-item">
             <li>Sobre o DoubleBrain</li>
           </a>
+            <a href="index.html" class="menu-lateral-item"id="hide-menu">
+            <li>Voltar ao menu inicial</li>
+              </a>
         </ul>
       </div>
     </section>
 
 
   
-  <footer>
+   <footer>
+ <div class="footer-content">
+    <img src="./assets/img/logo.png" alt="Double Brain" class="footer-logo">
 
+    <p>© 2025 Double Brain — Projeto desenvolvido na FIAP</p>
+    <p>Todos os direitos reservados.</p>
+  </div>
   </footer>
 
-
-      <script src="./js/script.js"></script>
+   <script src="./js/cards.js"></script>
+    <script src="./js/link.js"></script>
+    <script src="./js/script.js"></script>
     <script src="./js/dialog.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     

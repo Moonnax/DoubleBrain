@@ -19,11 +19,13 @@
         <i data-lucide="menu" id="svg"></i>
         </button>
       </div>
+      <div class="desk-logo">
       <div class="doublebrain">
-        <img src="./assets/img/nome.png" alt="DoubleBrain🧠">
+        <a href="index.html"><img src="./assets/img/nome.png" alt="DoubleBrain🧠"></a>
       </div>
       <div class="sinapse-counting">
-        <img src="./assets/img/logo.png" alt="🧠">
+        <a href="index.html"><img src="./assets/img/logo.png" alt="🧠"></a>
+      </div>
       </div>
     </header>
     <main>
@@ -32,20 +34,20 @@
     </div>
   <section class="trilhas-choice">
     <div>
-      <a href="praticar.html">
-      <img src="./assets/img/estruturadedados.png" alt="Vetor Estrutura de dados">
+      <a href="praticar.html?trilha=estrutura-de-dados">
+      <img src="./assets/img/estruturadedados.png" alt=" Estrutura de dados">
       <p>Estrutura de dados</p>
       </a>
     </div>
     <div>
-      <a href="praticar.html">
-      <img src="./assets/img/programacao.png" alt="Vetor Programação">
+      <a href="praticar.html?trilha=programacao">
+      <img src="./assets/img/programacao.png" alt=" Programação">
       <p>Programação</p>
       </a>
     </div>
     <div>
-      <a href="praticar.html">
-      <img src="./assets/img/algoritmos.png" alt="Vetor Algoritimos">
+      <a href="praticar.html?trilha=algoritmos">
+      <img src="./assets/img/algoritmos.png" alt=" Algoritimos">
       <P>Algoritmos</P>
       </a>
     </div>
@@ -67,19 +69,19 @@
     <nav id="navigation">
       <ul class="menu">
         <li class="menu-item">
-          <a class="menu-link" href="index.html">
+          <a class="menu-link" id="link-home" href="index.html">
             <i data-lucide="home" class="icon-menu"></i>
             <span>Início</span>
           </a>
         </li>
         <li class="menu-item ">
-          <a class="menu-link " href="praticar.html">
+          <a class="menu-link" id="link-praticar" href="praticar.html">
             <i data-lucide="zap" class="icon-menu"></i>
             <span>Praticar</span>
           </a>
         </li>
         <li class="menu-item">
-          <a class="menu-link" href="trilhas.html">
+          <a class="menu-link" id="link-trilhas" href="trilhas.html">
             <i data-lucide="book" class="icon-menu"></i>
             <span>Trilhas</span>
           </a>
@@ -92,13 +94,19 @@
     <!-- MENU LATERAL -->
     <section class="menu-lateral-position">
       <header class="dialog-header">
-        <h2 class="menu-lateral-title">menu</h2>
+        <h2 class="menu-lateral-title"><a href="index.html">menu</a></h2>
         <button id="close-button" class="icon-button" aria-label="Fechar">
           <i data-lucide="x"></i>
         </button>
       </header>
       <div>
         <ul class="menu-lateral">
+          <a href="praticar.html" class="menu-lateral-item" id="hide-menu">
+            <li>Praticar</li>
+          </a>
+          <a href="trilhas.html" class="menu-lateral-item" id="hide-menu">
+            <li>Trilhas</li>
+          </a>
           <a href="faq.html" class="menu-lateral-item" >
             <li >Perguntas Frequentes</li>
           </a>
@@ -111,18 +119,27 @@
           <a href="sobre.html" class="menu-lateral-item">
             <li>Sobre o DoubleBrain</li>
           </a>
+            <a href="index.html" class="menu-lateral-item"id="hide-menu">
+            <li>Voltar ao menu inicial</li>
+              </a>
         </ul>
       </div>
     </section>
 
 
   
-  <footer>
+    <footer>
+ <div class="footer-content">
+    <img src="./assets/img/logo.png" alt="Double Brain" class="footer-logo">
 
+    <p>© 2025 Double Brain — Projeto desenvolvido na FIAP</p>
+    <p>Todos os direitos reservados.</p>
+  </div>
   </footer>
 
-
-      <script src="./js/script.js"></script>
+    <script src="./js/trilhas.js"></script>
+    <script src="./js/link.js"></script>
+    <script src="./js/script.js"></script>
     <script src="./js/dialog.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     

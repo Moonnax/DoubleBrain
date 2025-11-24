@@ -20,52 +20,73 @@
         <i data-lucide="menu" id="svg"></i>
         </button>
       </div>
+      <div class="desk-logo">
       <div class="doublebrain">
-        <img src="./assets/img/nome.png" alt="DoubleBrain🧠">
+        <a href="index.html"><img src="./assets/img/nome.png" alt="DoubleBrain🧠"></a>
       </div>
       <div class="sinapse-counting">
-        <img src="./assets/img/logo.png" alt="🧠">
+        <a href="index.html"><img src="./assets/img/logo.png" alt="🧠"></a>
+      </div>
       </div>
     </header>
     <main>
       <h1 id="assunt-title">Perguntas Frequentes</h1>
 
-<section>
-  <div class="question">
-    <p id="pergunta">Como o DoubleBrain escolhe o que devo revisar?</p>
-    <p id="resp">Usamos um sistema de Personalização Adaptativa que analisa seu desempenho em tempo real. Se você domina um conceito, o intervalo de revisão aumenta. Caso demonstre dificuldade, ele volta mais cedo com reforço estratégico. Além disso, garantimos que os fundamentos, como lógica e estruturas de dados, sejam priorizados para manter sua evolução consistente.</p>
+<section class="faq-container">
+  <div class="faq-item">
+    <button class="faq-question">
+      <span>Como o DoubleBrain escolhe o que devo revisar?</span>
+      <i data-lucide="chevron-down" class="faq-icon"></i>
+    </button>
+    <div class="faq-answer">
+      <p>Usamos um sistema de Personalização Adaptativa que analisa seu desempenho em tempo real. Se você domina um conceito, o intervalo de revisão aumenta. Caso demonstre dificuldade, ele volta mais cedo com reforço estratégico. Além disso, garantimos que os fundamentos, como lógica e estruturas de dados, sejam priorizados para manter sua evolução consistente.</p>
+    </div>
   </div>
-    <div class="question">
-    <p id="pergunta">Minha rotina de estudos vai ficar sobrecarregada?</p>
-    <p id="resp">Pelo contrário! o DoubleBrain reduz sua carga, não aumenta. A sobrecarga acontece quando você tenta lembrar de tudo sem tempo para revisar. Aqui, as revisões são curtas, de 3 a 5 minutos, sem atrapalhar sua rotina. Você mantém os fundamentos em dia enquanto eu cuido da memorização, para que você avance com leveza e menos ansiedade.</p>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      <span>Minha rotina de estudos vai ficar sobrecarregada?</span>
+      <i data-lucide="chevron-down" class="faq-icon"></i>
+    </button>
+    <div class="faq-answer">
+      <p>Pelo contrário! o DoubleBrain reduz sua carga, não aumenta. A sobrecarga acontece quando você tenta lembrar de tudo sem tempo para revisar. Aqui, as revisões são curtas, de 3 a 5 minutos, sem atrapalhar sua rotina. Você mantém os fundamentos em dia enquanto eu cuido da memorização, para que você avance com leveza e menos ansiedade.</p>
+    </div>
   </div>
-    <div class="question">
-    <p id="pergunta">Em que formato recebo o conteúdo e como funciona a interação diária?</p>
-    <p id="resp">A experiência é leve, contínua e totalmente personalizada. Você revisa através de flashcards, microdesafios e quizzes curtos, sempre focados no essencial. Cada resposta que você dá me ajuda a ajustar o conteúdo: acertos fazem o tema avançar, enquanto dúvidas geram reforços imediatos com explicações objetivas. Tudo em poucos minutos por dia, direto ao ponto, sem distrações.</p>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      <span>Em que formato recebo o conteúdo e como funciona a interação diária?</span>
+      <i data-lucide="chevron-down" class="faq-icon"></i>
+    </button>
+    <div class="faq-answer">
+      <p>A experiência é leve, contínua e totalmente personalizada. Você revisa através de flashcards, microdesafios e quizzes curtos, sempre focados no essencial. Cada resposta que você dá me ajuda a ajustar o conteúdo: acertos fazem o tema avançar, enquanto dúvidas geram reforços imediatos com explicações objetivas. Tudo em poucos minutos por dia, direto ao ponto, sem distrações.</p>
+    </div>
   </div>
 </section>
-<div id="container">
+
+<div id="container" class="endpage">
   <p>Ainda com Dúvidas?</p>
   <a href="contato.html">Entrar em contato conosco</a>
 </div>
       
+
       <!-- menu fixo inferior -->
     <nav id="navigation">
       <ul class="menu">
         <li class="menu-item">
-          <a class="menu-link" href="index.html">
+          <a class="menu-link" id="link-home" href="index.html">
             <i data-lucide="home" class="icon-menu"></i>
             <span>Início</span>
           </a>
         </li>
         <li class="menu-item ">
-          <a class="menu-link " href="praticar.html">
+          <a class="menu-link" id="link-praticar" href="praticar.html">
             <i data-lucide="zap" class="icon-menu"></i>
             <span>Praticar</span>
           </a>
         </li>
         <li class="menu-item">
-          <a class="menu-link" href="trilhas.html">
+          <a class="menu-link" id="link-trilhas" href="trilhas.html">
             <i data-lucide="book" class="icon-menu"></i>
             <span>Trilhas</span>
           </a>
@@ -73,18 +94,25 @@
       </ul>
     </nav>
    
+   
   </main>
 
     <!-- MENU LATERAL -->
     <section class="menu-lateral-position">
       <header class="dialog-header">
-        <h2 class="menu-lateral-title">menu</h2>
+        <h2 class="menu-lateral-title"><a href="index.html">menu</a></h2>
         <button id="close-button" class="icon-button" aria-label="Fechar">
           <i data-lucide="x"></i>
         </button>
       </header>
       <div>
         <ul class="menu-lateral">
+          <a href="praticar.html" class="menu-lateral-item" id="hide-menu">
+            <li>Praticar</li>
+          </a>
+          <a href="trilhas.html" class="menu-lateral-item" id="hide-menu">
+            <li>Trilhas</li>
+          </a>
           <a href="faq.html" class="menu-lateral-item" >
             <li >Perguntas Frequentes</li>
           </a>
@@ -97,18 +125,27 @@
           <a href="sobre.html" class="menu-lateral-item">
             <li>Sobre o DoubleBrain</li>
           </a>
+            <a href="index.html" class="menu-lateral-item"id="hide-menu">
+            <li>Voltar ao menu inicial</li>
+              </a>
         </ul>
       </div>
     </section>
 
 
-  
   <footer>
+ <div class="footer-content">
+    <img src="./assets/img/logo.png" alt="Double Brain" class="footer-logo">
 
+    <p>© 2025 Double Brain — Projeto desenvolvido na FIAP</p>
+    <p>Todos os direitos reservados.</p>
+  </div>
   </footer>
 
 
-      <script src="./js/script.js"></script>
+     <script src="./js/faq.js"></script>
+    <script src="./js/link.js"></script>
+    <script src="./js/script.js"></script>
     <script src="./js/dialog.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     
